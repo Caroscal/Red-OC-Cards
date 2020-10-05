@@ -6,4 +6,4 @@ Filters can be used to look for subgroups.
 
 Media queries are used to help with styling on mobile devices.
 
-The characters are created by artist RedXBacon, used with permission.
+For a live demonstration of this project see the following codepen link: [https://codepen.io/Rosscallister/pen/bGpypjN](https://codepen.io/Rosscallister/pen/bGpypjN)
