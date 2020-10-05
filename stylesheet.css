@@ -1,0 +1,201 @@
+body{
+    margin: 0px;
+    background-color: black;
+}
+
+.filterControls{
+    position:fixed;
+    top:0px;
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(73, 73, 73);
+}
+
+select{
+    font-size: 12pt;
+    margin:3px;
+}
+
+label{
+    font-family: 'Arsenal', sans-serif;
+    font-size: 12pt;
+    margin: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.container{
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    margin:5px;
+    display: grid;
+    width: 380px;
+    height: 450px;
+    grid-template-columns: 10px 200px auto 10px;
+    grid-template-rows: 10px 50px 200px auto 10px;
+    border-radius: 30px;
+    
+}
+
+p{
+    font-family: 'Arsenal', sans-serif;
+    font-size: 12pt;
+    margin: 5px;
+}
+
+.name{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 2px;
+    border-radius: 8px;
+}
+
+.name h1{
+    margin: 5px;
+    text-align: center;
+    font-family: 'Abhaya Libre', serif;
+}
+
+.image{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-radius:15px;
+    margin: 2px;
+}
+
+.image img{
+    width: 95%;
+    height: 95%;
+    border-radius: 15px;
+    margin: auto;
+    display: block;
+}
+
+.basicInfo{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: 2px;
+    padding-top: 5px;
+    border-radius: 8px;
+}
+
+.adinfo{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin: 2px;
+    border-radius: 8px;
+}
+
+.adinfo p{
+    font-size: 12.5pt;
+}
+
+.Field{
+    margin-left: 8px;
+    margin-top: 12px;
+}
+.adField{
+    width: 95%;
+    padding: 8px 8px;
+}
+/* THINGS FOR PINK CARDS */
+.pink{
+    background-color: rgb(238, 159, 172);
+}
+.card-pink{
+    background-color: pink;
+    border: 10px solid rgb(219, 113, 130);
+}
+.image-pink img{
+    border: 5px solid rgb(219, 113, 130);
+}
+.name-pink{
+    background-color: rgb(219, 113, 130);
+}
+/* THINGS FOR BLUE CARDS */
+.blue{
+    background-color: rgb(123, 199, 209);
+}
+.card-blue{
+    background-color: lightblue;
+    border: 10px solid  rgb(89, 175, 187);
+}
+.image-blue img{
+    border: 5px solid rgb(89, 175, 187);
+}
+.name-blue{
+    background-color: rgb(89, 175, 187);
+}
+/* THINGS FOR GREY CARDS */
+.grey{
+    background-color: rgb(172, 172, 172);
+}
+.card-grey{
+    background-color: lightgrey;
+    border: 10px solid  rgb(100, 100, 100);
+}
+.image-grey img{
+    border: 5px solid rgb(100, 100, 100);
+}
+.name-grey{
+    background-color: rgb(100, 100, 100);
+}
+/* THINGS FOR BROWN CARDS */
+.brown{
+    background-color: rgb(209, 164, 104);
+}
+.card-brown{
+    background-color: burlywood;
+    border: 10px solid  rgb(139, 103, 57);
+}
+.image-brown img{
+    border: 5px solid rgb(139, 103, 57);
+}
+.name-brown{
+    background-color: rgb(139, 103, 57);
+}
+/* THINGS FOR PURPLE CARDS */
+.purple{
+    background-color: rgb(178, 147, 214);
+}
+.card-purple{
+    background-color: rgb(218, 193, 241);
+    border: 10px solid  rgb(137, 99, 180);
+}
+.image-purple img{
+    border: 5px solid rgb(137, 99, 180);
+}
+.name-purple{
+    background-color: rgb(137, 99, 180);
+}
+
+@media (max-width: 600px){
+    .filterControls{
+        height:100px;
+        flex-wrap: wrap;
+    }
+    .container{
+        margin: 100px 0 0 0;
+    }
+    label{
+        width:20%;
+    }
+    select{
+        width:20%;
+    }
+}
